@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.3 on win32)" generated="2024-11-24T13:41:21.281808" rpa="false" schemaversion="5">
+<suite id="s1" name="UI-Testing" source="C:\Users\namo_\Downloads\qa\project phase 2\ITDS362\ui-testing\ui-code\UI-Testing.robot">
+<test id="s1-t1" name="Test Create Discussion" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:21.522671" level="INFO">Opening browser 'Chrome' to base url 'http://45.136.236.146:8081/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-24T13:41:21.522671" elapsed="2.033456"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="content"]/div/div/div/nav/ul/li[1]/button</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-24T13:41:23.557126" elapsed="0.018002"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:23.575128" level="INFO">Verifying element 'xpath=//*[@id="content"]/div/div/div/nav/ul/li[1]/button/span' contains exact text 'Start a Discussion'.</msg>
+<arg>xpath=//*[@id="content"]/div/div/div/nav/ul/li[1]/button/span</arg>
+<arg>Start a Discussion</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:23.575128" elapsed="0.025004"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:23.601125" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div/div/nav/ul/li[1]/button'.</msg>
+<arg>xpath=//*[@id="content"]/div/div/div/nav/ul/li[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:23.601125" elapsed="0.068002"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:23.753133" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:23.669127" elapsed="0.084006"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@placeholder="Username or Email"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-24T13:41:23.754135" elapsed="0.227592"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:23.981727" level="INFO">Typing text 'namo.nanon5@gmail.com' into text field 'xpath=//input[@placeholder="Username or Email"]'.</msg>
+<arg>xpath=//input[@placeholder="Username or Email"]</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:23.981727" elapsed="0.095007"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:24.077735" level="INFO">Typing text 'Namo2546666' into text field 'xpath=//input[@placeholder="Password"]'.</msg>
+<arg>xpath=//input[@placeholder="Password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:24.076734" elapsed="0.081596"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:24.159329" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div[2]/div[4]/button/span' contains exact text 'Log In'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div[2]/div[4]/button/span</arg>
+<arg>Log In</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:24.159329" elapsed="0.014001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:24.174329" level="INFO">Clicking element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div[2]/div[4]/button/span'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div[2]/div[4]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:24.174329" elapsed="0.050000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:24.318482" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:24.224329" elapsed="0.094153"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-24T13:41:26.318751" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-24T13:41:24.318482" elapsed="2.000269"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:26.318751" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div/div/nav/ul/li[1]/button/span'.</msg>
+<arg>xpath=//*[@id="content"]/div/div/div/nav/ul/li[1]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:26.318751" elapsed="0.062007"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:26.506802" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:26.380758" elapsed="0.126044"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-24T13:41:28.507915" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-24T13:41:26.507802" elapsed="2.000113"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:28.507915" level="INFO">Typing text 'HII' into text field 'xpath=//*[@id="composer"]/div/div[2]/div/div[1]/ul/li[3]/h3/input'.</msg>
+<arg>xpath=//*[@id="composer"]/div/div[2]/div/div[1]/ul/li[3]/h3/input</arg>
+<arg>HII</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:28.507915" elapsed="0.043547"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:28.551462" level="INFO">Typing text 'Hello' into text field 'xpath=//*[@id="composer"]/div/div[2]/div/div[1]/div/div/div/div/div[1]/textarea'.</msg>
+<arg>xpath=//*[@id="composer"]/div/div[2]/div/div[1]/div/div/div/div/div[1]/textarea</arg>
+<arg>Hello</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:28.551462" elapsed="0.053995"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:28.606457" level="INFO">Verifying element 'xpath=//*[@id="composer"]/div/div[2]/div/div[1]/div/div/ul/li[1]/button/span' contains exact text 'Post Discussion'.</msg>
+<arg>xpath=//*[@id="composer"]/div/div[2]/div/div[1]/div/div/ul/li[1]/button/span</arg>
+<arg>Post Discussion</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:28.605457" elapsed="0.011999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:28.618457" level="INFO">Clicking element 'xpath=//*[@id="composer"]/div/div[2]/div/div[1]/div/div/ul/li[1]/button/span'.</msg>
+<arg>xpath=//*[@id="composer"]/div/div[2]/div/div[1]/div/div/ul/li[1]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:28.618457" elapsed="0.048003"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:28.734501" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:28.666460" elapsed="0.068041"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-24T13:41:30.734911" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-24T13:41:28.734501" elapsed="2.000410"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:30.734911" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[1]/h3' contains exact text 'Choose Tags for Your Discussion'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[1]/h3</arg>
+<arg>Choose Tags for Your Discussion</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:30.734911" elapsed="0.012494"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:30.748406" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[3]/ul/li/span[2]' contains exact text 'General'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[3]/ul/li/span[2]</arg>
+<arg>General</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:30.748406" elapsed="0.011000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:30.759406" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[2]/button/span' contains exact text 'OK'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[2]/button/span</arg>
+<arg>OK</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:30.759406" elapsed="0.012008"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:30.771414" level="INFO">Clicking element 'xpath=//*[@id="modal"]/div/div/div/form/div[3]/ul/li/span[2]'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[3]/ul/li/span[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:30.771414" elapsed="0.045027"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:30.817441" level="INFO">Clicking element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[2]/button/span'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[2]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:30.817441" elapsed="0.043003"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:30.952281" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:30.861442" elapsed="0.090839"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-24T13:41:32.953696" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-24T13:41:30.953283" elapsed="2.000413"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:32.954202" level="INFO">Verifying element 'xpath=//*[@id="content"]/div/div[2]/header/div/ul/li[2]/h2' contains exact text 'HII'.</msg>
+<arg>xpath=//*[@id="content"]/div/div[2]/header/div/ul/li[2]/h2</arg>
+<arg>HII</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:32.953696" elapsed="0.012512"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:32.967209" level="INFO">Verifying element 'xpath=//*[@id="content"]/div/div[2]/div/div/div/div[1]/article/div/div' contains exact text 'Hello'.</msg>
+<arg>xpath=//*[@id="content"]/div/div[2]/div/div/div/div[1]/article/div/div</arg>
+<arg>Hello</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:32.966208" elapsed="0.013000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:33.031195" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:32.979208" elapsed="0.051987"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:33.032194" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/nav/ul/li[1]/div/button[2]/i[2]'.</msg>
+<arg>xpath=//*[@id="content"]/div/div[2]/div/nav/ul/li[1]/div/button[2]/i[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:33.032194" elapsed="0.047002"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:33.080195" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div/nav/ul/li[1]/div/ul/li[5]/button'.</msg>
+<arg>xpath=//*[@id="content"]/div/div[2]/div/nav/ul/li[1]/div/ul/li[5]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:33.080195" elapsed="0.056518"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-24T13:41:33.137713" elapsed="2.137447"/>
+</kw>
+<status status="PASS" start="2024-11-24T13:41:21.521668" elapsed="13.754473"/>
+</test>
+<test id="s1-t2" name="Test Login" line="47">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:35.277141" level="INFO">Opening browser 'Chrome' to base url 'http://45.136.236.146:8081/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-24T13:41:35.277141" elapsed="1.815361"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="content"]/div/div/div/nav/ul/li[1]/button</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-24T13:41:37.092502" elapsed="0.017001"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:37.109503" level="INFO">Verifying element 'xpath=//*[@id="header-secondary"]/ul/li[3]/button/span' contains exact text 'Log In'.</msg>
+<arg>xpath=//*[@id="header-secondary"]/ul/li[3]/button/span</arg>
+<arg>Log In</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:37.109503" elapsed="0.024997"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:37.209501" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:37.134500" elapsed="0.075001"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-24T13:41:39.209620" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-24T13:41:37.209501" elapsed="2.000119"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:39.209620" level="INFO">Clicking element 'xpath=//*[@id="header-secondary"]/ul/li[3]/button/span'.</msg>
+<arg>xpath=//*[@id="header-secondary"]/ul/li[3]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:39.209620" elapsed="0.047517"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@placeholder="Username or Email"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-24T13:41:39.258136" elapsed="0.226409"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:39.485546" level="INFO">Typing text 'namo.nanon5@gmail.com' into text field 'xpath=//input[@placeholder="Username or Email"]'.</msg>
+<arg>xpath=//input[@placeholder="Username or Email"]</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:39.484545" elapsed="0.106002"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:39.591545" level="INFO">Typing text 'Namo2546666' into text field 'xpath=//input[@placeholder="Password"]'.</msg>
+<arg>xpath=//input[@placeholder="Password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:39.590547" elapsed="0.075999"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:39.667546" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div[2]/div[4]/button' contains exact text 'Log In'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div[2]/div[4]/button</arg>
+<arg>Log In</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:39.667546" elapsed="0.013000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:39.681545" level="INFO">Clicking element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div[2]/div[4]/button'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div[2]/div[4]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:39.681545" elapsed="0.048001"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:39.818938" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:39.730545" elapsed="0.088393"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-24T13:41:41.819994" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-24T13:41:39.819941" elapsed="2.000053"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="header-secondary"]/ul/li[3]/div/button</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-24T13:41:41.819994" elapsed="0.013006"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:41.886058" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:41.834002" elapsed="0.052056"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-24T13:41:41.886058" elapsed="2.149309"/>
+</kw>
+<status status="PASS" start="2024-11-24T13:41:35.276141" elapsed="8.760242"/>
+</test>
+<test id="s1-t3" name="Test Forgot Password" line="65">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:44.037385" level="INFO">Opening browser 'Chrome' to base url 'http://45.136.236.146:8081/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-24T13:41:44.037385" elapsed="1.878993"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="content"]/div/div/div/nav/ul/li[1]/button</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-24T13:41:45.917378" elapsed="0.017511"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:45.935894" level="INFO">Verifying element 'xpath=//*[@id="header-secondary"]/ul/li[3]/button/span' contains exact text 'Log In'.</msg>
+<arg>xpath=//*[@id="header-secondary"]/ul/li[3]/button/span</arg>
+<arg>Log In</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:45.934889" elapsed="0.030001"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:46.028018" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:45.964890" elapsed="0.063128"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-24T13:41:48.028107" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-24T13:41:46.028018" elapsed="2.000089"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:48.028107" level="INFO">Clicking element 'xpath=//*[@id="header-secondary"]/ul/li[3]/button/span'.</msg>
+<arg>xpath=//*[@id="header-secondary"]/ul/li[3]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:48.028107" elapsed="0.049009"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-24T13:41:50.077156" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-24T13:41:48.077116" elapsed="2.000040"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:50.077156" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[3]/p[1]/a' contains exact text 'Forgot password?'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[3]/p[1]/a</arg>
+<arg>Forgot password?</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:50.077156" elapsed="0.013856"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:50.091012" level="INFO">Clicking element 'xpath=//*[@id="modal"]/div/div/div/form/div[3]/p[1]/a'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[3]/p[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:50.091012" elapsed="0.046001"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:50.137013" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[1]/h3' contains exact text 'Forgot Password'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[1]/h3</arg>
+<arg>Forgot Password</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:50.137013" elapsed="0.015999"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:50.153012" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/p' contains exact text 'Enter your email address and we will send you a link to reset your password.'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/p</arg>
+<arg>Enter your email address and we will send you a link to reset your password.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:50.153012" elapsed="0.011999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:50.166017" level="INFO">Typing text 'namo.nanon5@gmail.com' into text field 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[1]/input'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[1]/input</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:50.165011" elapsed="0.100562"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:50.265573" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[2]/button/span' contains exact text 'Recover Password'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[2]/button/span</arg>
+<arg>Recover Password</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:50.265573" elapsed="0.013050"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:50.278623" level="INFO">Clicking element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[2]/button/span'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div[2]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:50.278623" elapsed="0.041519"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:50.408570" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:50.320142" elapsed="0.088428"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-24T13:41:55.408924" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-24T13:41:50.408570" elapsed="5.000354"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:55.409430" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/p' contains exact text 'We've sent you an email containing a link to reset your password. Check your spam folder if you don't receive it within the next minute or two.'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/p</arg>
+<arg>We've sent you an email containing a link to reset your password. Check your spam folder if you don't receive it within the next minute or two.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:55.408924" elapsed="0.009511"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:55.419439" level="INFO">Verifying element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div/button' contains exact text 'OK'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div/button</arg>
+<arg>OK</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-24T13:41:55.419439" elapsed="0.011997"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:55.432438" level="INFO">Clicking element 'xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div/button'.</msg>
+<arg>xpath=//*[@id="modal"]/div/div/div/form/div[2]/div/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-24T13:41:55.431436" elapsed="0.043002"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-24T13:41:55.555438" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-24T13:41:55.474438" elapsed="0.081000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-24T13:41:55.555438" elapsed="2.146403"/>
+</kw>
+<status status="PASS" start="2024-11-24T13:41:44.036383" elapsed="13.665458"/>
+</test>
+<status status="PASS" start="2024-11-24T13:41:21.282815" elapsed="36.420029"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="UI-Testing">UI-Testing</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
